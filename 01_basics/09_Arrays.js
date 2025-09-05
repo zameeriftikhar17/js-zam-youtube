@@ -28,14 +28,38 @@ const myArr2 = new Array(1,2,3,4)
 
   //slice, splice
 
-  console.log("A", myArr);
+  //console.log("A", myArr);
 
   const myn1 = myArr.slice(1,3)
 
-  console.log(myn1);
-  console.log("B", myArr);
+  //console.log(myn1);
+  //console.log("B", myArr);
 
   const myn2 = myArr.splice(1,3)
-console.log("C", myArr);
-  console.log(myn2);
+//console.log("C", myArr);
+  //console.log(myn2);
 
+
+  const marvel_heros = ["Ali,Umir","Zameer"]
+  const dc_heros = ["superman", "flash","batman"]
+
+  marvel_heros.push(dc_heros)
+
+  //console.log(marvel_heros);
+  //console.log(marvel_heros);
+
+  const allHeros = marvel_heros.concat(dc_heros)
+  //console.log(allHeros);
+
+  const all_new_heros = [...marvel_heros, ...allHeros]
+
+  //console.log(all_new_heros);
+
+
+  const another_array = [1,2,3, [4,5,6], 7, [6,7,[4,5]]]
+
+  const real_another_array = another_array.flat(Infinity)
+  //console.log(real_another_array);
+
+
+  
