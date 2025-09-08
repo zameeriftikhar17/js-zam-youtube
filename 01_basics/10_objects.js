@@ -28,7 +28,7 @@ jsUser.greeting = function() {
 }
 
 jsUser.greeting2 = function() {
-    console.log("Hello Zameer, ${this.name}");
+    console.log(`Hello Zameer, ${this.name}`);
 }
 
 //console.log(jsUser.greeting());
@@ -91,4 +91,4 @@ console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+console.log(tinderUser.hasOwnProperty(`isLoggedIn`));
